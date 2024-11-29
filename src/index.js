@@ -1,4 +1,5 @@
 import Masonry from 'masonry-layout';
+import './styles.css';
 
 window.onload = () => {
     const grid = document.querySelector('.grid');
