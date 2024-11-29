@@ -19,6 +19,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html'
     }),
+    new CopyWebpackPlugin({ 
+      patterns: [ 
+        { from: 'src/images', to: 'images' } 
+      ] 
+    })
   ],
   resolve: {
     extensions: ['.js'], // Resolve .js files
